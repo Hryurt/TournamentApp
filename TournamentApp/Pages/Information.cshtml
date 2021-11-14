@@ -1,0 +1,697 @@
+﻿@page
+@model TournamentApp.Pages.InformationModel
+@{
+}
+<div class="container">
+    <div class="accordion" id="myAccordion">
+    
+    </div>
+</div>
+
+
+<div class="information-page pb-4">
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-sm-6 card-opacity mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/csgo.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-angle-down"></i> CS:GO</button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Turnuva görevlilerine ve diğer oyunculara saygılı olunması zorunludur.
+                                </li>
+                                <li>
+                                    Turnuva öncesinde, turnuva esnasında ve turnuva dışında sportmenlik dışı hareketler yapılması kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat öncesinde, Discord adresimizden Check-in yapılması zorunludur.
+                                </li>
+                                <li>
+                                    Turnuva esnasında üçüncü parti program kullanılması yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva 5v5 olarak gerçekleşecektir.
+                                </li>
+                                <li>
+                                    Her iki takımın, maç sonucunun ekran görüntüsü alınması zorunludur.
+                                </li>
+                                <li>
+                                    Maç esnasında oyuncular timeout hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Final maçına kadar galibiyet tek maç üzerinden olması ile birlikte, final maçı üç galibiyet ile sonuçlanacaktır.
+                                </li>
+                                <li>
+                                    Harita havuzu aşağıdaki gibidir;
+                                    <ul>
+                                        <li>de_inferno</li>
+                                        <li>de_train</li>
+                                        <li>de_mirage</li>
+                                        <li>de_nuke</li>
+                                        <li>de_overpass</li>
+                                        <li>de_dust2</li>
+                                        <li>de_dust2</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Harita seçimi, takım kaptanlarının harita yasaklaması ile yapılacaktır.
+                                </li>
+                                <li>
+                                    Adminler ve turnuva yetkilileri, kurallar hakkında değişiklik yapma hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Final maçları, Dlive adresimizden canlı olarak yayınlanacaktır.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı Discord adresimizden turnuva adminlerine iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 card-opacity">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/pubg.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button id="buttonTwo" type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseTwo"><i class="fa fa-angle-down"></i> PUBG Mobile</button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Turnuva görevlilerine ve diğer oyunculara saygılı olunması zorunludur.
+                                </li>
+                                <li>
+                                    Turnuva öncesinde, turnuva esnasında ve turnuva dışında sportmenlik dışı hareketler yapılması kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat öncesinde, Discord adresimizden Check-in yapılması zorunludur.
+                                </li>
+                                <li>
+                                    Turnuva esnasında üçüncü parti program kullanılması yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva mobil platform üzerinden olacaktır.
+                                </li>
+                                <li>
+                                    Adminler ve turnuva yetkilileri, kurallar hakkında değişiklik yapma hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı Discord adresimizden turnuva adminlerine iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-6 card-opacity mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/rocket-league.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseThree"><i class="fa fa-angle-down"></i> Rocket League</button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Turnuva görevlilerine ve diğer oyunculara saygılı olmak zorunludur. Turnuva öncesi,
+                                    turnuva içi ve turnuva dışı sportmenliğe yakışmayacak davranışlarda bulunmak kesinlikle
+                                    yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat önce discord adresinden check-in yapılması gerekmektedir.
+                                </li>
+                                <li>
+                                    Turnuvaya girecek herkesin e-playout discordunda bulunması gerekmektedir.(Ses
+                                    kanalında bulunulması zorunlu değildir sadece discorda katılıp check-in yapılması yeterli
+                                    olacaktır.)
+                                </li>
+                                <li>
+                                    Turnuva 4vs4 olarak gerçekleşecektir.
+                                </li>
+                                <li>
+                                    Turnuva esnasında bağlantı kopması gibi durumlarda maç tekrardan kurulup aynı skor
+                                    üzerinden hesaplanıp oynanacaktır.
+                                </li>
+                                <li>
+                                    Takım oyuncularından bir kişinin herkesi ekleyip özel oda kurması gerekmektedir.
+                                </li>
+                                <li>
+                                    Oyun “Otomobol” modunda, bot olmadan ve oyun ayarları değiştirilmeden oynanacaktır.
+                                </li>
+                                <li>
+                                    Oyunun serverının bölgesi “Avrupa” olacaktır..
+                                </li>
+                                <li>
+                                    Oyunda DLC araç kullanımı serbesttir.
+                                </li>
+                                <li>
+                                    Kasıtlı olarak kendi kalesine gol atan oyuncular maç sonu incelenecektir.
+                                </li>
+                                <li>
+                                    Maç sonu skorunun ekran görüntüsü alınması zorunludur.
+                                </li>
+                                <li>
+                                    Turnuvada hile kullanımı kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı discord adresimizden adminlerimize iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Final maçları dlive adresinden canlı olarak yayınlanacaktır.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı discord adresimizden adminlerimize iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 card-opacity">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/lol.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseFour"><i class="fa fa-angle-down"></i> League of Legends</button>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Turnuva görevlilerine ve diğer oyunculara saygılı olmak zorunludur. Turnuva öncesi,
+                                    turnuva içi ve turnuva dışı sportmenliğe yakışmayacak davranışlarda bulunmak kesinlikle
+                                    yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat önce discord adresinden check-in yapılması gerekmektedir.
+                                </li>
+                                <li>
+                                    Turnuvaya girecek herkesin e-playout discordunda bulunması gerekmektedir.(Ses
+                                    kanalında bulunulması zorunlu değildir sadece discorda katılıp check-in yapılması yeterli
+                                    olacaktır.)
+                                </li>
+                                <li>
+                                    Turnuva 5vs5 olarak gerçekleşecektir.
+                                </li>
+                                <li>
+                                    Oyuncuların maç öncesi birbirini eklemesi ve koridor dağılımını yapmaları gerekmektedir.
+                                </li>
+                                <li>
+                                    Takım oyuncularından bir kişinin herkesi ekleyip özel oda kurması gerekmektedir.
+                                </li>
+                                <li>
+                                    Özel odayı kuran kişinin şifreyi diğer oyunculara vermesi gerekmektedir.
+                                </li>
+                                <li>
+                                    Final maçında izleyici olacak ve maç canlı olarak yayınlanacaktır.
+                                </li>
+                                <li>
+                                    Oyun “Sihirdar Vadisi” haritasında oynanacaktır
+                                </li>
+                                <li>
+                                    Oyun tipi “Sıralı Seçim” olacaktır.
+                                </li>
+                                <li>
+                                    Takım büyüklüğü “5” olacaktır.
+                                </li>
+                                <li>
+                                    Herhangi bir hile kullanan oyuncu olursa maç iptal edilir ve kişi uzaklaştırılır.
+                                </li>
+                                <li>
+                                    Maç sonu skorunun ekran görüntüsü alınması zorunlu değildir.
+                                </li>
+                                <li>
+                                    Maç bitmeden herkesin oyundan çıkılması ve oyunun bozulması durumunda maç
+                                    tekrardan oynanacaktır
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı discord adresimizden adminlerimize iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Final maçları dlive adresinden canlı olarak yayınlanacaktır.
+                                </li>
+                                <li>
+                                    Adminler ve turnuva yetkilileri, kurallar hakkında değişiklik yapma hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-6 card-opacity mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/pes2020.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseFive"><i class="fa fa-angle-down"></i> PES 2020</button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Dostluk maçı formatında 2v2 olarak oynanılacaktır.
+                                </li>
+                                <li>
+                                    Turnuva esnasında kulüp takımları seçilmesi zorunludur.
+                                </li>
+                                <li>
+                                    Turnuva esnasında ülke takımları seçilmesi yasak olmakla birlikte, diskalifiye olma
+                                    sebebidir.
+                                </li>
+                                <li>
+                                    Her iki oyuncu aynı takımı seçme hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Grup maçları 10 dakika, eleme turu 10, final maçı ise 15 dakika olarak oynanılacaktır.
+                                </li>
+                                <li>
+                                    Oyun ayarlarında sakatlık aktif olmayacaktır.
+                                </li>
+                                <li>
+                                    Oyun hızı +1 olarak ayarlanılacaktır. İki takım arasında anlaşılma sağlanırsa bu
+                                    değiştirilebilir.
+                                </li>
+                                <li>
+                                    Maç öncesi Formation (kadro ayarlanma) süresi 3 dakika ile sınırlandırılmıştır.
+                                </li>
+                                <li>
+                                    Stadyum, takımların belirlemesi ile seçilecektir.
+                                </li>
+                                <li>
+                                    Kamera seçimi geniş olacaktır, lakin oyuncular arasında ortak seçim ile birlikte
+                                    değiştirilebilir.
+                                </li>
+                                <li>
+                                    Ekranda radar olması zorunludur. İki takım arasında anlaşma sonucu değiştirilebilir.
+                                    Radar dışında kalan oyuncu adı, skor ve süre kaldırılamaz.
+                                </li>
+                                <li>
+                                    Turnuva esnasında her oyun futbol ahlaki değerlerine göre oynanılacaktır. Vakit
+                                    geçirmeye yönelik top çevirme, oyun açıklarını suistimal etmek yasaktır. Her oyuncu
+                                    bu tarz bir durumla karşılaştığında itiraz etme hakkına sahiptirler. Bu durum
+                                    tekrarlandığı takdirde takım hükmen yenik sayılacaktır.
+                                </li>
+                                <li>
+                                    Oyun esnasında değişiklikler, sadece oyun durduğunda; Korner, Taç, Aut, Faul atışı
+                                    gibi durumlarda yapılacaktır. Top hareket halinde iken oyunu durduran takımı itiraz
+                                    etme hakkına sahipsiniz.
+                                </li>
+                                <li>
+                                    Adminler ve turnuva yetkilileri, kurallar hakkında değişiklik yapma hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat öncesinde, Discord adresimizden Check-in yapılması
+                                    zorunludur.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı Discord adresimizden bizlere iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 card-opacity">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/nba2k20.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingEight">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseEight"><i class="fa fa-angle-down"></i> NBA 2K20</button>
+                        </h2>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Turnuva görevlilerine ve diğer oyunculara saygılı olmak zorunludur. Turnuva öncesi,
+                                    turnuva içi ve turnuva dışı sportmenliğe yakışmayacak davranışlarda bulunmak kesinlikle
+                                    yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat önce discord adresinden check-in yapılması gerekmektedir.
+                                </li>
+                                <li>
+                                    Turnuvaya girecek herkesin e-playout discordunda bulunması gerekmektedir.(Ses
+                                    kanalında bulunulması zorunlu değildir sadece discorda katılıp check-in yapılması yeterli
+                                    olacaktır.)
+                                </li>
+                                <li>
+                                    Turnuva 1vs1 olarak gerçekleşecektir.
+                                </li>
+                                <li>
+                                    Turnuva esnasında bağlantı kopması gibi durumlarda maç tekrardan kurulup aynı skor
+                                    üzerinden hesaplanıp oynanacaktır.
+                                </li>
+                                <li>
+                                    Rakibinizi ekleyip oda kurmanız gerekmektedir.
+                                </li>
+                                <li>
+                                    Seçilecek takımlar aynı zamanlara ait olması gerekmektedir (Örneğin: Classic NBA
+                                    Teams- All Time Teams)
+                                </li>
+                                <li>
+                                    Herhangi bir hile kullanan oyuncu olursa maç bozulur ve hile kullanan kişi uzaklaştırılır.
+                                </li>
+                                <li>
+                                    Maç sonu skorunun ekran görüntüsü alınması zorunludur.
+                                </li>
+                                <li>
+                                    Turnuvada hile kullanımı kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı discord adresimizden adminlerimize iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Final maçları dlive adresinden canlı olarak yayınlanacaktır.
+                                </li>
+                                <li>
+                                    Adminler ve turnuva yetkilileri, kurallar hakkında değişiklik yapma hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-6 card-opacity mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/forza.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingNine">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseNine"><i class="fa fa-angle-down"></i> Forza Horizon 4</button>
+                        </h2>
+                    </div>
+                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Turnuva görevlilerine ve diğer oyunculara saygılı olunması zorunludur.
+                                </li>
+                                <li>
+                                    Turnuva öncesinde, turnuva esnasında ve turnuva dışında sportmenlik dışı hareketler yapılması kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat öncesinde, Discord adresimizden Check-in yapılması zorunludur.
+                                </li>
+                                <li>
+                                    Turnuva esnasında üçüncü parti program kullanılması yasaktır.
+                                </li>
+                                <li>
+                                    Turnuvaya herkes tek olarak katılacaktır.
+                                </li>
+                                <li>
+                                    Takımlaşma yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva esnasında bağlantısı kopan oyuncular tekrardan bağlanamazsa oyun tekrardan kurulmayacak devam edecektir.
+                                </li>
+                                <li>
+                                    İzin verilen bütün araçlar serbesttir.
+                                </li>
+                                <li>
+                                    Kazanan kişinin oyun sonu ssi alması gerekmektedir.
+                                </li>
+                                <li>
+                                    Wintrade yapan oyuncular hiçbir turnuvamıza katılamayacaktır.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı discord adresimizden adminlerimize iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Final maçları dlive adresinden canlı olarak yayınlanacaktır.
+                                </li>
+                                <li>
+                                    Adminler ve turnuva yetkilileri, kurallar hakkında değişiklik yapma hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 card-opacity">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/fifa.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingTen">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseTen"><i class="fa fa-angle-down"></i> FIFA 2020</button>
+                        </h2>
+                    </div>
+                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Dostluk maçı formatında 2v2 olarak oynanılacaktır.
+                                </li>
+                                <li>
+                                    Turnuva esnasında kulüp takımları seçilmesi zorunludur.
+                                </li>
+                                <li>
+                                    Turnuva esnasında ülke takımları seçilmesi yasak olmakla birlikte, diskalifiye olma
+                                    sebebidir.
+                                </li>
+                                <li>
+                                    Her iki oyuncu aynı takımı seçme hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Grup maçları 10 dakika, eleme turu 10, final maçı ise 15 dakika olarak oynanılacaktır.
+                                </li>
+                                <li>
+                                    Oyun ayarlarında sakatlık aktif olmayacaktır.
+                                </li>
+                                <li>
+                                    Oyun hızı +1 olarak ayarlanılacaktır. İki takım arasında anlaşılma sağlanırsa bu
+                                    değiştirilebilir.
+                                </li>
+                                <li>
+                                    Maç öncesi Formation (kadro ayarlanma) süresi 3 dakika ile sınırlandırılmıştır.
+                                </li>
+                                <li>
+                                    Stadyum, takımların belirlemesi ile seçilecektir.
+                                </li>
+                                <li>
+                                    Kamera seçimi geniş olacaktır, lakin oyuncular arasında ortak seçim ile birlikte
+                                    değiştirilebilir.
+                                </li>
+                                <li>
+                                    Ekranda radar olması zorunludur. İki takım arasında anlaşma sonucu değiştirilebilir.
+                                    Radar dışında kalan oyuncu adı, skor ve süre kaldırılamaz.
+                                </li>
+                                <li>
+                                    Turnuva esnasında her oyun futbol ahlaki değerlerine göre oynanılacaktır. Vakit
+                                    geçirmeye yönelik top çevirme, oyun açıklarını suistimal etmek yasaktır. Her oyuncu
+                                    bu tarz bir durumla karşılaştığında itiraz etme hakkına sahiptirler. Bu durum
+                                    tekrarlandığı takdirde takım hükmen yenik sayılacaktır.
+                                </li>
+                                <li>
+                                    Oyun esnasında değişiklikler, sadece oyun durduğunda; Korner, Taç, Aut, Faul atışı
+                                    gibi durumlarda yapılacaktır. Top hareket halinde iken oyunu durduran takımı itiraz
+                                    etme hakkına sahipsiniz.
+                                </li>
+                                <li>
+                                    Adminler ve turnuva yetkilileri, kurallar hakkında değişiklik yapma hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat öncesinde, Discord adresimizden Check-in yapılması
+                                    zorunludur.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı Discord adresimizden bizlere iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-6 card-opacity mb-3">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/chess.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingSix">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseSix"><i class="fa fa-angle-down"></i> Satranç</button>
+                        </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Turnuva görevlilerine ve diğer oyunculara saygılı olmak zorunludur. Turnuva öncesi, turnuva içi ve turnuva dışı sportmenliğe yakışmayacak davranışlarda bulunmak kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Turnuva saatinden 1 saat önce discord adresinden check-in yapılması gerekmektedir.
+                                </li>
+                                <li>
+                                    Turnuvaya girecek herkesin e-playout discordunda bulunması gerekmektedir.(Ses kanalında bulunulması zorunlu değildir sadece discorda katılıp check-in yapılması yeterli olacaktır.)
+                                </li>
+                                <li>
+                                    Turnuva 1vs1 olarak gerçekleşecektir.
+                                </li>
+                                <li>
+                                    Maçlar için verilen toplam süre 40 dakikadır.
+                                </li>
+                                <li>
+                                    Her oyuncunun hamle yapmak için 20 saniye süresi vardır.
+                                </li>
+                                <li>
+                                    Turnuva esnasında bağlantı kopması gibi durumlarda maç tekrardan kurulup aynı pozisyon üzerinden başlanıp oynanacaktır.
+                                </li>
+                                <li>
+                                    Rakibinizi ekleyip oda kurmanız gerekmektedir.
+                                </li>
+                                <li>
+                                    Kimin hangi tarafta başlayacağı fikstür hazırlanırken belirlenecektir.
+                                </li>
+                                <li>
+                                    Herhangi bir hile kullanan oyuncu olursa maç bozulur ve hile kullanan kişi uzaklaştırılır.
+                                </li>
+                                <li>
+                                    Maç sonu skorunun ekran görüntüsü alınması ve discord üzerinden adminlere gönderilmesi zorunludur.
+                                </li>
+                                <li>
+                                    Turnuvada hile kullanımı kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı discord adresimizden adminlerimize iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Final maçı dlive adresinden canlı olarak yayınlanacaktır.
+                                </li>
+                                <li>
+                                    Adminler ve turnuva yetkilileri, kurallar hakkında değişiklik yapma hakkına sahiptir.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 card-opacity">
+                <div class="card">
+                    <img class="card-img-top" src="~/img/run.jpg" alt="Card image cap">
+                    <div class="card-header" id="headingSeven">
+                        <h2 class="mb-0">
+                            <button type="button" class="btn btn-link btn btn-link text-dark font-weight-bold text-uppercase" data-toggle="collapse" data-target="#collapseSeven"><i class="fa fa-angle-down"></i> Koşu</button>
+                        </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#myAccordion">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    Turnuva öncesinde, turnuva esnasında ve turnuva dışında sportmenlik dışı hareketler yapılması kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Yarışma Nike Run uygulaması üzerinden yapılacaktır. Diğer uygulamalar kabul edilmeyecektir.
+                                </li>
+                                <li>
+                                    Yarışma kısa/uzun mesafe olarak iki kategoride olacaktır, koşu yarışına kayıt yaptıran biri iki kategoride de yarışabilir.
+                                </li>
+                                <li>
+                                    Kısa mesafe koşu 400m, uzun mesafe koşu 5km olarak belirlenmiştir.
+                                </li>
+                                <li>
+                                    Koşuculara koşularını tamamlamaları için 2 hafta verilecektir.
+                                </li>
+                                <li>
+                                    Koşu süresi adminler tarafından gerekli görüldüğünde uzatılabilir.
+                                </li>
+                                <li>
+                                    Yarışmacıların belirlenen süre içerisindeki en iyi koşu sonuçlarını atmaları beklenmektedir.
+                                </li>
+                                <li>
+                                    Yarışmacıların koşularını tamamladıktan sonra uygulama üzerinden, discorddaki yarışma adminleriyle paylaşmaları gerekmektedir.
+                                </li>
+                                <li>
+                                    Koşu için kaydı alacak telefon/akıllı saat gibi cihazları koşmaya benzer hareketler ile kandırmak (kol sallama vs.) kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Sonuç ekranını paylaşırken görüntü editleme programlarıyla sonucunuzda oynama yapmak kesinlikle yasaktır.
+                                </li>
+                                <li>
+                                    Koşuda usulsüzlük yapanlar tespit edildiğinde turnuvadan men edilir.
+                                </li>
+                                <li>
+                                    Her türlü şikayet ve itirazlarınızı Discord adresimizden turnuva adminlerine iletebilirsiniz.
+                                </li>
+                                <li>
+                                    Turnuvaya katılan herkes turnuva kurallarını okumuş ve kabul etmiş sayılmaktadır.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.main-background').css("background-image", "url(img/information.jpg)");
+
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fa").addClass("fa fa-angle-up").removeClass("fa fa-angle-down");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa fa-angle-down").addClass("fa fa-angle-up");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa fa-angle-up").addClass("fa fa-angle-down");
+            });
+
+            var pathname = window.location.pathname;
+            console.log(pathname);
+
+
+        });
+    </script>
+}

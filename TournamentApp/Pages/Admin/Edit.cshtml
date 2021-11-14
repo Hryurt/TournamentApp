@@ -1,0 +1,76 @@
+﻿@page
+@model TournamentApp.Pages.Admin.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "_AdminLayout";
+}
+
+<h1 class="text-center">Edit</h1>
+
+<h4 class="text-center">Registration</h4>
+<hr />
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Registration.Id" />
+            <div class="form-group">
+                <label asp-for="Registration.Name" class="control-label"></label>
+                <input asp-for="Registration.Name" class="form-control" />
+                <span asp-validation-for="Registration.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration.Surname" class="control-label"></label>
+                <input asp-for="Registration.Surname" class="form-control" />
+                <span asp-validation-for="Registration.Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration.Email" class="control-label"></label>
+                <input asp-for="Registration.Email" class="form-control" />
+                <span asp-validation-for="Registration.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration.DiscordId" class="control-label"></label>
+                <input asp-for="Registration.DiscordId" class="form-control" />
+                <span asp-validation-for="Registration.DiscordId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration.TeamCheck" class="control-label"></label>
+                <input asp-for="Registration.TeamCheck" class="form-control" />
+                <span asp-validation-for="Registration.TeamCheck" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration.TeamName" class="control-label"></label>
+                <input asp-for="Registration.TeamName" class="form-control" />
+                <span asp-validation-for="Registration.TeamName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration.Game" class="control-label"></label>
+                <input asp-for="Registration.Game" class="form-control" />
+                <span asp-validation-for="Registration.Game" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration.RulesCheck" class="control-label"></label>
+                <input asp-for="Registration.RulesCheck" class="form-control" />
+                <span asp-validation-for="Registration.RulesCheck" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Registration.CreatedAt" class="control-label"></label>
+                <input asp-for="Registration.CreatedAt" class="form-control" />
+                <span asp-validation-for="Registration.CreatedAt" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary w-100" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center">
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

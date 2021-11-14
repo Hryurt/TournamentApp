@@ -1,0 +1,102 @@
+﻿@page
+@model TournamentApp.Pages.RegistrationModel
+@{
+    ViewData["Title"] = "Registration page";
+}
+<div class="container d-flex justify-content-center">
+    <div class="col-md-6 mt-5">
+        <form method="post">
+            <div class="text-center">
+                <h3 class="black-color">Turnuvaya Kayıt Ol</h3>
+                <p>Katılmak istediğiniz her oyun için tekrar form doldurunuz</p>
+            </div>
+            <hr />
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6 mb-3 mb-md-0">
+                        <input type="text" class="form-control  shadow-box" id="name" name="name" aria-describedby="name" placeholder="Ad">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control  shadow-box" id="surname" name="surname" aria-describedby="surname" placeholder="Soyad">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control shadow-box" id="email" name="email" aria-describedby="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <select id="game" name="game" class="form-control shadow-box">
+                    <option value="" disabled selected>Lütfen oyun seçiniz</option>
+                    <option value="Counter Strike: Global Offensive">Counter Strike: Global Offensive</option>
+                    <option value="Rocket League">Rocket League</option>
+                    <option value="PES 2020">PES 2020</option>
+                    <option value="Satranç">Satranç</option>
+                    <option value="Koşu">Koşu</option>
+                    <option value="NBA2K20">NBA2K20</option>
+                    <option value="PUBG Mobile">PUBG Mobile</option>
+                    <option value="Forza Horizon 4">Forza Horizon 4</option>
+                    <option value="League of Legends">League of Legends</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="teamCheck" name="teamCheck" class="form-control shadow-box">
+                    <option value="" disabled selected>Takımınız var mı?</option>
+                    <option value="yes">Evet</option>
+                    <option value="no">Hayır</option>
+                </select>
+            </div>
+            <div class="form-group" style="display:none" id="team">
+                <input type="text" class="form-control shadow-box" id="teamName" name="teamName" aria-describedby="teamName" placeholder="Takım Adı">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control shadow-box" id="discordId" name="discordId" aria-describedby="discordId" placeholder="Discord Id">
+            </div>
+            <div class="form-check mb-2">
+                <input type="checkbox" class="form-check-input" id="rulesCheck" name="rulesCheck">
+                <label class="form-check-label" for="rulesCheck"><a asp-page="/Privacy" target="_blank" class="black-color">Turnuva kurallarını</a> okudum ve kabul ediyorum.</label>
+            </div>
+            <button type="submit" class="btn btn-warning w-100 mb-2 shadow-box green-background black-color bold-special" id="submitButton" disabled>Kayıt Ol!</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ("@Model.Message" == "Success") {
+                toastr.success('Kaydınız Başarıyla Alındı', 'Sağlıklı Günler Dileriz');
+            }
+            
+            $('.main-background').css("background-image", "url(/img/bg-1.jpg)");
+
+            $('#teamCheck').on('change', function () {
+                if (this.value == 'yes') {
+                    $("#team").show();
+                }
+                else {
+                    $("#team").hide();
+                }
+            });
+
+            $('#game').on('change', function () {
+                if (this.value == 'PES 2020' || this.value == 'Satranç' || this.value == 'Koşu'
+                    || this.value == 'NBA2K20' || this.value == 'PUBG Mobile' || this.value == 'Forza Horizon 4') {
+                    $("#teamCheck").hide();
+                    console.log("up");
+                }
+                else {
+                    $("#teamCheck").show();
+                    console.log("down");
+                }
+            });
+
+            $('#rulesCheck').click(function () {
+                if ($(this).is(':checked')) {
+                    $('#submitButton').attr("disabled", false);
+                } else {
+                    $('#submitButton').attr("disabled", true);
+                }
+            });
+        });
+    </script>
+}

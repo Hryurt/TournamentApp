@@ -1,0 +1,246 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 0px;
+}
+
+.footer {
+    background-color: #081D28;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/*Custom CSS For the Site*/
+.carousel-item {
+    height: 90vh;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
+}
+
+.carousel-opacity {
+    opacity: 0.5;
+}
+
+.carousel-item {
+    background-color: #000;
+}
+
+.carousel-caption {
+    bottom: unset;
+    top: 30%;
+}
+
+@media screen and (min-width: 401px) {
+    .carousel-caption h2 {
+        font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Montserrat,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 4rem;
+        font-weight: 600;
+        text-shadow: 1px 1px 5px #111217;
+    }
+
+    .carousel-caption p {
+        font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Montserrat,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .carousel-caption h2 {
+        font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Montserrat,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 3rem;
+        font-weight: 600;
+        text-shadow: 1px 1px 5px #111217;
+    }
+
+    .carousel-caption p {
+        font-family: "Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Montserrat,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+        font-size: 1rem;
+    }
+}
+
+.main-nav {
+    background-image: url(../img/background.png);
+    -webkit-background-size: cover;
+}
+
+.green-color {
+    color: #01C9CF;
+}
+
+.black-color {
+    color: #081D28 !important;
+}
+
+.green-background {
+    background-color: #01C9CF;
+    border-color: #01C9CF;
+}
+
+.reg-img {
+    max-width: 100%;
+}
+
+.reg-card {
+    max-width: 100%;
+    border: unset;
+    -webkit-box-shadow: 10px 10px 109px -23px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 109px -23px rgba(255,255,255,1);
+    box-shadow: 10px 10px 109px -23px rgba(255,255,255,1);
+}
+
+.shadow-box {
+    -webkit-box-shadow: 10px 10px 125px -6px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 125px -6px rgba(255,255,255,1);
+    box-shadow: 10px 10px 125px -6px rgba(255,255,255,1);
+}
+
+.border-special {
+    border-top: 1px solid #3A4059;
+}
+
+.navbar-gradient {
+    background-color: #073D47;
+}
+
+.bold-special {
+    font-weight: 600;
+}
+
+.main-background {
+    background-image: url(/img/bg-1.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.font-special {
+    font-size:2rem!important;
+}
+
+@media screen and (min-width: 801px) {
+    .olim-logo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 149px;
+        height: 160px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .olim-logo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 74.5px;
+        height: 80px !important;
+    }
+}
+
+.btn-warning:hover {
+    background-color: #E5711C !important;
+    border-bottom-color: #E5711C !important;
+}
+
+.btn-warning:disabled {
+    background-color: #E5711C !important;
+    border-bottom-color: #E5711C !important;
+}
+
+.information-page {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+.card-opacity {
+    opacity: 1 !important;
+}
+
+.register-button {
+    background-color: #E57108 !important;
+    border-color: #E57108;
+}
+    .register-button:hover {
+        background-color: #E57108 !important;
+        border-color: #E57108;
+    }
+    .register-button:focus {
+        background-color: #E57108 !important;
+        border-color: #E57108;
+    }
